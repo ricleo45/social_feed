@@ -1,12 +1,23 @@
 import React from 'react';
 import './NavBar.css'
 
-const NavBar = (props) => {
+const Header = (props) => {
     return(
-    <h1>
-        SocialPost
-    </h1>
+    <tittle>
+        <h1>
+            Social<small className='mutedText'>Post</small>
+        </h1>
+        <nav className='nav'>
+            <ul>
+                <li><a href='index.js'>This</a></li>
+                <li><a href='index.js'>is</a></li>
+                <li><a href='index.js'>a</a></li>
+                <li><a href='index.js'>Nav</a></li>
+                <li><a href='index.js'>Menu</a></li>
+            </ul>
+        </nav>
+    </tittle>
     )
-};
+}
+export default Header;
 
-export default NavBar;

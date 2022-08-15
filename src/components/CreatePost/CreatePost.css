@@ -1,6 +1,6 @@
 
 .textEntry{
-    background-color:rgba(255, 255, 255, 0.553);
+    background-color:rgba(0, 154, 243, 0.329);
     border-radius: 14px;
     border: 0rem;
     align-content: center;
@@ -27,7 +27,9 @@
 }
 
 .button {
-    border-radius: 14px;
+    margin-left: 0.5rem;
+    padding:0.2rem;
+    border-radius: 13px;
     color:white;
-    background-color:rgb(74, 97, 245);
+    background-color:hsla(219, 100%, 51%, 0.648);
 }

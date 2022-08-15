@@ -19,7 +19,8 @@ const CreatePostForm = (props) => {
     return (
         <form className='form' onSubmit={handleSubmit}>
             <input placeholder='Name' className='textEntry' type='text' value={name} onChange={(event) => setName((event.target.value))} />
-            <input size='50' placeholder='Post' className='textEntry' type='text' value={post} onChange={(event) => setPost((event.target.value))} />
+            <input placeholder='Post' className='textEntry' type='text' value={post} onChange={(event) => setPost((event.target.value))} />
+            <br></br>
             <button className='button' type='submit'>Create</button>
         </form>
     )
