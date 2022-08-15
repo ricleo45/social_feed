@@ -1,6 +1,7 @@
 import DisplayPost from "../src/components/DisplayPost/DisplayPost";
 import CreatePostForm from "./components/CreatePost/CreatePost";
 import React, { useState } from "react";
+import NavBar from "./components/NavBar";
 import "./App.css";
 
 function App() {
@@ -10,10 +11,6 @@ function App() {
       post: "First!",
       // like: false,
       // dislike: false,
-    },
-    {
-      name: "Ricardo Leon",
-      post: "test",
     },
   ]);
 
@@ -25,6 +22,7 @@ function App() {
 
   return (
     <div>
+      <NavBar />
       <CreatePostForm addNewPostProperty={addNewPost} />
       <DisplayPost postEntry={posts} />
     </div>

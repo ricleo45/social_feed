@@ -16,9 +16,10 @@
 
 
 .form{
-    background-color:rgba(20, 193, 241, 0.298);
-    border-radius: 30px;
-    box-shadow: -1px 4px 20px hsla(191, 66%, 25%, 0.498);
+    background-color:rgba(255, 255, 255, 0.298);
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: -15px 4px 20px hsla(191, 66%, 25%, 0.498);
     content: center;
     padding: 2rem;
     margin: 8rem;
