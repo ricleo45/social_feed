@@ -1,11 +1,13 @@
-const PostEntries = (props) => {
+
+const Post = (props) => {
     return(
-        <table>
-            <h1>
-                Post Entries
-            </h1>
-        </table>
+       <div>
+        {props.post.name}
+        <br></br>
+        {props.post.post}
+        {/* like dislike button component called here */}
+       </div>
     )
 }
 
-export default PostEntries;
+export default Post;

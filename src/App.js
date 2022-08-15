@@ -1,10 +1,34 @@
-import React from "react";
-import App from "./App";
-import ReactDOM from "react-dom";
+import DisplayPost from "../src/components/DisplayPost/DisplayPost";
+import CreatePostForm from "./components/CreatePost/CreatePost";
+import React, { useState } from "react";
+import "./App.css";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+function App() {
+  const [posts, setPosts] = useState([
+    {
+      name: "James Burgess",
+      post: "First!",
+      // like: false,
+      // dislike: false,
+    },
+    {
+      name: "Ricardo Leon",
+      post: "test",
+    },
+  ]);
+
+  function addNewPost(post) {
+    let tempPost = [post, ...posts];
+
+    setPosts(tempPost);
+  }
+
+  return (
+    <div>
+      <CreatePostForm addNewPostProperty={addNewPost} />
+      <DisplayPost postEntry={posts} />
+    </div>
+  );
+}
+
+export default App;

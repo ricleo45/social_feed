@@ -1,7 +1,28 @@
-const CreatePost = (props) => {
+import React, { useState } from 'react';
+import './CreatePost.css';
+
+const CreatePostForm = (props) => {
+    
+    const [name, setName] = useState('');
+    const [post, setPost] = useState('');
+
+    function handleSubmit(event) {
+        event.preventDefault();
+        let newEntry = {
+            name: name,
+            post: post
+        };
+        console.log(newEntry);
+        props.addNewPostProperty(newEntry);
+    }
+
     return (
-        <h1>Create Props</h1>
+        <form className='form' onSubmit={handleSubmit}>
+            <input placeholder='Name' className='textEntry' type='text' value={name} onChange={(event) => setName((event.target.value))} />
+            <input size='50' placeholder='Post' className='textEntry' type='text' value={post} onChange={(event) => setPost((event.target.value))} />
+            <button className='button' type='submit'>Create</button>
+        </form>
     )
 }
 
-export default CreatePost;
+export default CreatePostForm;

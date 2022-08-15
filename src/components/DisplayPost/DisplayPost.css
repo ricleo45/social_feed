@@ -1,0 +1,7 @@
+.displayedPost{
+    background-color: rgba(255, 255, 255, 0.541);
+    border-radius: 5px;
+    border: 10px;
+    margin: 1rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
