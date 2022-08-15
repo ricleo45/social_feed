@@ -5,7 +5,7 @@ const Header = (props) => {
     return(
     <tittle>
         <h1>
-            Social<small className='mutedText'>Post</small>
+            Social<small className='mutedText'>Feed</small>
         </h1>
         <nav className='nav'>
             <ul>
